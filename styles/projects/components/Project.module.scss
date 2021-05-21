@@ -1,0 +1,52 @@
+@import '../../utilities/breakpoints';
+@import 'include-media';
+
+.imagesContainer{
+    height: 75vh;
+    width: 100%;
+    @include media("<desktop"){
+        height: 25vh;
+    }
+}
+.homeImagesContainer{
+    height: 75vh;
+    @include media("<desktop"){
+        height: 25vh;
+    }
+}
+.imageFlex{
+    display: flex !important;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.homeImageFlex{
+    flex-wrap: nowrap;
+}
+.imageContainer{
+    height: 100% !important;
+}
+.homeImageContainer{
+}
+.homeMainImageContainer{
+    float: left;
+    height: 100%;
+}
+.mainImageContainer{
+    height: 100%;
+}
+
+.projectImage{
+    
+    object-fit: cover;
+}
+.homeProjectImage{
+    height: 100% !important;
+}
+
+.mainImage{
+    max-width:100% !important;
+    max-height:100% !important;
+}
+
+

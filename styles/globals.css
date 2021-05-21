@@ -4,8 +4,12 @@ body {
   padding: 0;
   margin: 0;
   background-color: #F2F2F2;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: ivymode, sans-serif;
+  font-style: normal;
+}
+h1{
+  color: black;
+  font-weight: 700;
 }
 #__next{
   height: 100%;
@@ -17,4 +21,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.flexBreak{
+  flex-basis: 100%;
+  height: 0;
 }

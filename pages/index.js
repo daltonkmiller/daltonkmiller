@@ -1,15 +1,17 @@
 import Layout from './components/layout'
 import { Flex, Box, Image } from 'rebass'
-
+import { ArroganceContent } from './projects/arrogance'
+import { ControlContent } from './projects/control'
+import Nav from './components/nav'
 import styles from '../styles/Home.module.css'
+import { TexasContent } from './projects/texas'
 
 export default function Home() {
   return (
     <Layout title="Home">
-      <Flex height="100%" justifyContent="center" alignItems="center">
-        {/* <Image src="../images/outside.gif" style={{position:'fixed', height:'100vh', width:'100vw'}}/> */}
-        <Image src='../images/loading.gif' width="750px"/>
-      </Flex>
+      <ControlContent displayType='home' />
+      <ArroganceContent displayType='home' />
+      <TexasContent displayType='home' />
     </Layout>
   )
 }
